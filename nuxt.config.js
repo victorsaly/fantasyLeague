@@ -65,8 +65,7 @@ module.exports = {
     proxy: true // Can be also an object with default options
   },
   proxy: {
-    '/drf': { target: 'https://fantasy.premierleague.com/drf', pathRewrite: {'^/drf': '/'} },
-    '/fantasyLeague/drf': { target: 'https://fantasy.premierleague.com/drf', pathRewrite: {'^/fantasyLeague/drf': '/'} }
+    '/drf': { target: 'https://fantasy.premierleague.com/drf', pathRewrite: {'^/drf': '/'} }
   },
   /*
   ** Build configuration
