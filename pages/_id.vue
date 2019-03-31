@@ -173,6 +173,8 @@ export default {
 
       axios.get("drf/events/").then(function(response){
         self.events = response.data;
+      }).catch(error=>{
+
       });
 
       axios.get("drf/leagues-classic-standings/" + this.$route.params.id).then(function(data) {
@@ -215,10 +217,16 @@ export default {
                 self.users[i].history = d.data.history;
                 self.users[i].chips = d.data.chips;
               });
+            }).catch(error=>{
+
             });
 
          
+        }).catch(error=>{
+
         });
+      }).catch(error=>{
+
       });
     },
     shuffle: function() {

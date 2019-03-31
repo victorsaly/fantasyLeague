@@ -1,14 +1,7 @@
 const pkg = require('./package')
 
-// only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-    base: '/fantasyLeague/'
-  },
-} : {};
-
 module.exports = {
-  mode: 'spa',
+  mode: 'universal',
 
   /*
   ** Headers of the page
@@ -84,7 +77,6 @@ module.exports = {
     */
     extend(config, ctx) {
     }
-  },
-  ...routerBase
+  }
 
 }
