@@ -2,6 +2,11 @@ const pkg = require('./package')
 
 
 module.exports = {
+  router: {
+    base: '/fantasyLeague/'
+  },
+  //buildDir: 'pages',
+
   mode: 'spa',
 
   /*
