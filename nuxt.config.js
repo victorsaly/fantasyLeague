@@ -1,13 +1,7 @@
 const pkg = require('./package')
 
-
 module.exports = {
-  router: {
-    base: '/fantasyLeague/'
-  },
-  //buildDir: 'pages',
-
-  mode: 'spa',
+  mode: 'universal',
 
   /*
   ** Headers of the page
@@ -83,4 +77,5 @@ module.exports = {
     extend(config, ctx) {
     }
   }
+
 }
